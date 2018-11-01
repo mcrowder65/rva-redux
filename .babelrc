@@ -1,0 +1,55 @@
+
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "2"
+      }
+    }],
+    "react"
+
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-async-to-generator",
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    "syntax-dynamic-import",
+    [
+      "import",
+      [
+        {
+          "libraryName": "history",
+          "libraryDirectory": "",
+          "camel2DashComponentName": false
+        },
+        {
+          "libraryName": "react-router",
+          "libraryDirectory": "",
+          "camel2DashComponentName": false
+        },
+        {
+          "libraryName": "react-router-dom",
+          "libraryDirectory": "",
+          "camel2DashComponentName": false
+        },
+        {
+          "libraryName": "@material-ui/core",
+          "libraryDirectory": "",
+          "camel2DashComponentName": false
+        },
+        {
+          "libraryName": "@material-ui/icons",
+          "libraryDirectory": "",
+          "camel2DashComponentName": false
+        }
+      ]
+    ]
+  ]
+}
