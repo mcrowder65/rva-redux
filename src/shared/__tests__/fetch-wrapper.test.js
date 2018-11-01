@@ -57,7 +57,7 @@ describe("All the different response types", () => {
   test(`content-type: ${
     HTTP_RESPONSE_TYPES.JSON
   } should resolve to a json`, async () => {
-    const body = { hello: "I am a string in a json" };
+    const body = { input: "I am a string in a json" };
     const url = shortId.generate();
     fetchMock.post(url, {
       body,
